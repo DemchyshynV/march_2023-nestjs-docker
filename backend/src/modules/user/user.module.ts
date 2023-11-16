@@ -13,7 +13,7 @@ import { UserService } from './user.service';
     TypeOrmModule.forFeature([UserEntity]),
     AuthModule,
     RedisModule.forRoot({
-      url: 'redis://localhost:6379',
+      url: 'redis://redis:6379',
     }),
   ],
   controllers: [UserController],

@@ -29,7 +29,7 @@ async function bootstrap() {
     },
   });
 
-  await app.listen(appConfig.app_port, () => {
+  await app.listen(3001, () => {
     Logger.log(`http://${appConfig.app_host}:${appConfig.app_port}/api`, 'Doc');
   });
 }

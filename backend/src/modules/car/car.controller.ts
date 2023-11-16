@@ -38,7 +38,7 @@ export class CarController {
 
   @ApiOperation({ summary: 'Get car by id' })
   @CityDecorator(CityEnum.LVIV)
-  @UseGuards(AuthGuard(), CityGuard)
+  // @UseGuards(AuthGuard(), CityGuard)
   @Get(':carId')
   async getCarById(
     @Param('carId') carId: string,

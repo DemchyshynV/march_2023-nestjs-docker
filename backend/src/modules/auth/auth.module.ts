@@ -15,7 +15,7 @@ import { BearerStrategy } from './bearer.strategy';
       property: 'user',
     }),
     RedisModule.forRoot({
-      url: 'redis://localhost:6379',
+      url: 'redis://redis:6379',
     }),
     TypeOrmModule.forFeature([UserEntity]),
     JwtModule.registerAsync({
